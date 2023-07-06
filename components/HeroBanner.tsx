@@ -11,7 +11,6 @@ const HeroBanner = ({ heroBanner }) => {
         <p className="beats-solo">{heroBanner.smallText}</p>
         <h3>{heroBanner.midText}</h3>
         <h1>{heroBanner.largeText1}</h1>
-        {/* {console.log(urlFor(heroBanner.image))} */}
         {console.log(urlFor(heroBanner.image).url())}
         <Image 
         src={urlFor(heroBanner.image).url()} 
@@ -26,6 +25,7 @@ const HeroBanner = ({ heroBanner }) => {
         className="hero-banner-image" 
         width={250}
         height={250}
+        This shouldn't be here ---> {console.log(urlFor(heroBanner.image))}
         /> */}
 
         <div>
