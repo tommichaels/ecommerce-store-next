@@ -2,6 +2,8 @@ import React from 'react';
 import { Inter } from 'next/font/google';
 import { Product, FooterBanner, HeroBanner } from '@/components';
 
+import { client } from '@/lib/client';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ products, bannerData }) {
